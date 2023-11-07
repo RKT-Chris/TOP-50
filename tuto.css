@@ -1,0 +1,129 @@
+:root {
+  --color1: #dbdbdb;
+  --color2: #f0a500;
+  --color3: #cf7500;
+  --color4: black;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color1);
+}
+#header {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 10vh;
+  width: 98.7vw;
+  background: var(--color4);
+  color: var(--color1);
+  text-align: center;
+}
+main {
+  position: relative;
+  top: 10vh;
+}
+article.Home {
+  background: var(--color1);
+  width: 98.7vw;
+  padding-top: 5vh;
+}
+article.Home section {
+  border-radius: 2vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--color2);
+  text-align: center;
+  padding-top: 2vh;
+  box-shadow: 1px 1px 2vh #aaa;
+}
+.topImg {
+  border-radius: 2vmin;
+  cursor: pointer;
+}
+/* #region top5 */
+article.top5 {
+  display: flex;
+  justify-content: space-evenly;
+  height: 60vh;
+  text-align: center;
+}
+article.top5 section {
+  width: 18vw;
+  height: 50vh;
+}
+.top5 .topImg {
+  height: 40vh;
+}
+/* #endregion */
+
+/* #region top50*/
+article.top50 {
+  display: grid;
+  grid-template-columns: repeat(6, 14vw);
+  grid-template-rows: repeat(7, 40vh);
+  gap: 5vh 2.5vw;
+  position: relative;
+  padding: 0 1.25vw;
+}
+.top50 .topImg {
+  height: 30vh;
+}
+/* #endregion */
+
+/* #region more information */
+#info {
+  padding: 3vmin;
+  border-radius: 5vmin;
+  margin: 0 auto;
+  position: relative;
+  top: 25vh;
+  background: var(--color2);
+  height: 60vh;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 1vh #aaa;
+}
+#articleImg {
+  width: 30vw;
+}
+#articleText {
+  width: 50vw;
+}
+#info hr {
+  border: 1px solid black;
+}
+#info img {
+  height: 55vh;
+  border-radius: 2vmin;
+}
+#pageNumber {
+  position: absolute;
+  right: 1vw;
+  bottom: 1vh;
+}
+.arrow {
+  background: var(--color3);
+  border-radius: 50%;
+  height: 10vh;
+  width: 10vh;
+  text-align: center;
+  position: absolute;
+  bottom: 40vh;
+  font-size: 3.5rem;
+  cursor: pointer;
+  box-shadow: 1px 1px 1vh #aaa;
+}
+#leftArrow {
+  left: 5vw;
+}
+#rightArrow {
+  right: 5vw;
+}
+
+/* #endregion; */
